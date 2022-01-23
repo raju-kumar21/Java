@@ -1,22 +1,20 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+import java.util.logging.Level;
+import java.util.logging.Logger;
 public class Test1 {
-    public static void main(String[] args) {
-        int a[] = new int[5];
-        int i,j=0;
+    public static void main(String[] args)  {
         try
         {
-            for(i=0;i<args.length;i++)
-            {
-                a[i]=Integer.parseInt(args[i]);
-            j++;}
+            Class.forName();
+            System.out.println("Deriver loaded.....");
         }
-        catch(ArrayIndexOutOfBoundsException ref)
+        catch(ClassNotFoundException e)
         {
-            System.out.println("the value should be <=5 ...");
-            ref.printStackTrace();
+            
         }
-       for(i=0;i<j;i++)
-       {
-           System.out.println("value ="+a[i]);
-       }
     }
+    
 }
